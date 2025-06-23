@@ -11,23 +11,6 @@ namespace TransActiva.Controllers;
 [Route("api/[controller]")]
 public class BuyerController (IOrder order, IPaymentOrder paymentOrder) : ControllerBase
 {
-   
- 
-    [HttpPost("VistaPagar")]
-    public async Task<IActionResult> GetPayment(int id)
-    {
-        try
-        {
-            var registro = await paymentOrder.GeyDataPayment(id);
-            return Ok (new { registered = registro });
-            
-        }
-        
-        catch (Exception ex)
-        {
-            return NotFound(new { message = ex.Message });
-        }
-    }
     
     [Authorize(Roles = "Comprador")]
     [HttpPost("Pagar")]
