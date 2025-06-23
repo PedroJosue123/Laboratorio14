@@ -11,8 +11,59 @@ namespace TransActiva.Controllers;
 [Route("api/[controller]")]
 public class BuyerController (IOrder order, IPaymentOrder paymentOrder) : ControllerBase
 {
+   
+   
     
-  
+    [Authorize(Roles = "Comprador")]
+    [HttpGet("VersOrdenAceptada{id}")]
+    public async Task<IActionResult> VersiPago(int id)
+    {
+        try
+        {
+            var registro = await order.VerSiOrderAceptado(id);
+            return Ok (new { Idpedido = registro });
+            
+        }
+        
+        catch (Exception ex)
+        {
+            return NotFound(new { message = ex.Message });
+        }
+    }
+    
+    [Authorize(Roles = "Comprador")]
+    [HttpPost("VistaPagar")]
+    public async Task<IActionResult> GetPayment(int id)
+    {
+        try
+        {
+            var registro = await paymentOrder.GeyDataPayment(id);
+            return Ok (new { registered = registro });
+            
+        }
+        
+        catch (Exception ex)
+        {
+            return NotFound(new { message = ex.Message });
+        }
+    }
+    
+    [Authorize(Roles = "Comprador")]
+    [HttpPost("Pagar")]
+    public async Task<IActionResult> Payment(int id, [FromBody] PaymentCartDto paymentCartDto)
+    {
+        try
+        {
+            var registro = await paymentOrder.Payment(id, paymentCartDto);
+            return Ok (new {registro });
+            
+        }
+        
+        catch (Exception ex)
+        {
+            return NotFound(new { message = ex.Message });
+        }
+    }
     
     [Authorize(Roles = "Comprador")]
     [HttpGet("Mostarlospedidos{id}")]
