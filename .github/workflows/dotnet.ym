@@ -19,13 +19,13 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore ./transactiva/transactiva.csproj
 
       - name: Build
-        run: dotnet build --configuration Release
+        run: dotnet build ./transactiva/transactiva.csproj --configuration Release
 
       - name: Publish
-        run: dotnet publish --configuration Release --output ./published
+        run: dotnet publish ./transactiva/transactiva.csproj --configuration Release --output ./published
 
       - name: Deploy to EC2
         uses: appleboy/scp-action@master
@@ -36,3 +36,4 @@ jobs:
           port: 22
           source: "./published/"
           target: "/home/ubuntu/appdotnet/published"
+
