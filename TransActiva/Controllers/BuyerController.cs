@@ -13,7 +13,22 @@ public class BuyerController (IOrder order, IPaymentOrder paymentOrder) : Contro
 {
    
   
-  
+    [Authorize(Roles = "Comprador")]
+    [HttpGet("VersOrdenAceptada{id}")]
+    public async Task<IActionResult> VersiPago(int id)
+    {
+        try
+        {
+            var registro = await order.VerSiOrderAceptado(id);
+            return Ok (new { Idpedido = registro });
+            
+        }
+        
+        catch (Exception ex)
+        {
+            return NotFound(new { message = ex.Message });
+        }
+    }
     
     [Authorize(Roles = "Comprador")]
     [HttpPost("VistaPagar")]
