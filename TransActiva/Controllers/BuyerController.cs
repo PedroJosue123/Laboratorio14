@@ -12,23 +12,7 @@ namespace TransActiva.Controllers;
 public class BuyerController (IOrder order, IPaymentOrder paymentOrder) : ControllerBase
 {
    
-    [Authorize(Roles = "Comprador")]
-    [HttpPost("Comprador")]
-    public async Task<IActionResult> Login([FromBody] RegisterOrderRequestDto registerOrderRequestDto)
-    {
-        try
-        {
-            var registro = await order.RegisterOrder(registerOrderRequestDto);
-            return Ok (new { Idpedido = registro });
-            
-        }
-        
-        catch (Exception ex)
-        {
-            return NotFound(new { message = ex.Message });
-        }
-    }
-    
+  
     [Authorize(Roles = "Comprador")]
     [HttpGet("VersOrdenAceptada{id}")]
     public async Task<IActionResult> VersiPago(int id)

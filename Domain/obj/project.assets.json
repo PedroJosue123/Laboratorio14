@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Tecsup\\.nuget\\packages\\": {}
+    "C:\\Users\\AVATECC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TransActiva\\Domain\\Domain.csproj",
+      "projectUniqueName": "E:\\tecsup\\6to_semestre\\Desarrollo de aplicaciones Avanzado\\Laboratorio14\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "D:\\TransActiva\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\Tecsup\\.nuget\\packages\\",
-      "outputPath": "D:\\TransActiva\\Domain\\obj\\",
+      "projectPath": "E:\\tecsup\\6to_semestre\\Desarrollo de aplicaciones Avanzado\\Laboratorio14\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\AVATECC\\.nuget\\packages\\",
+      "outputPath": "E:\\tecsup\\6to_semestre\\Desarrollo de aplicaciones Avanzado\\Laboratorio14\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tecsup\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\AVATECC\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,13 +38,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -60,26 +54,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Tecsup\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

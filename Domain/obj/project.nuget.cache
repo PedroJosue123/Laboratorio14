@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HJg6cczVVfE=",
+  "dgSpecHash": "3cQMK8dfeb2gE8E548tYMqjXwrv1vnTcNXkRNcyPKjpWEGWCK0ITyy22mMkJqLB4hsVJXJFYWII9KJbf5KdsAw==",
   "success": true,
-  "projectFilePath": "D:\\TransActiva\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Tecsup\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.11\\microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
-    "C:\\Users\\Tecsup\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.11\\microsoft.windowsdesktop.app.ref.8.0.11.nupkg.sha512",
-    "C:\\Users\\Tecsup\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.11\\microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512"
-  ],
+  "projectFilePath": "E:\\tecsup\\6to_semestre\\Desarrollo de aplicaciones Avanzado\\Laboratorio14\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -3167,19 +3167,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tecsup\\.nuget\\packages\\": {}
+    "C:\\Users\\AVATECC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TransActiva\\TransActiva\\TransActiva.csproj",
+      "projectUniqueName": "E:\\tecsup\\6to_semestre\\Desarrollo de aplicaciones Avanzado\\Laboratorio14\\TransActiva\\TransActiva.csproj",
       "projectName": "TransActiva",
-      "projectPath": "D:\\TransActiva\\TransActiva\\TransActiva.csproj",
-      "packagesPath": "C:\\Users\\Tecsup\\.nuget\\packages\\",
-      "outputPath": "D:\\TransActiva\\TransActiva\\obj\\",
+      "projectPath": "E:\\tecsup\\6to_semestre\\Desarrollo de aplicaciones Avanzado\\Laboratorio14\\TransActiva\\TransActiva.csproj",
+      "packagesPath": "C:\\Users\\AVATECC\\.nuget\\packages\\",
+      "outputPath": "E:\\tecsup\\6to_semestre\\Desarrollo de aplicaciones Avanzado\\Laboratorio14\\TransActiva\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tecsup\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\AVATECC\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3191,11 +3191,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\TransActiva\\Application\\Application.csproj": {
-              "projectPath": "D:\\TransActiva\\Application\\Application.csproj"
+            "E:\\tecsup\\6to_semestre\\Desarrollo de aplicaciones Avanzado\\Laboratorio14\\Application\\Application.csproj": {
+              "projectPath": "E:\\tecsup\\6to_semestre\\Desarrollo de aplicaciones Avanzado\\Laboratorio14\\Application\\Application.csproj"
             },
-            "D:\\TransActiva\\Infraestructure\\Infraestructure.csproj": {
-              "projectPath": "D:\\TransActiva\\Infraestructure\\Infraestructure.csproj"
+            "E:\\tecsup\\6to_semestre\\Desarrollo de aplicaciones Avanzado\\Laboratorio14\\Infraestructure\\Infraestructure.csproj": {
+              "projectPath": "E:\\tecsup\\6to_semestre\\Desarrollo de aplicaciones Avanzado\\Laboratorio14\\Infraestructure\\Infraestructure.csproj"
             }
           }
         }
@@ -3204,13 +3204,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -3256,24 +3250,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -3282,60 +3258,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Tecsup\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Extensions.Caching.Memory' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-qj66-m88j-hmgj",
-      "libraryId": "Microsoft.Extensions.Caching.Memory",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.IdentityModel.JsonWebTokens' 7.0.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
-      "libraryId": "Microsoft.IdentityModel.JsonWebTokens",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.IdentityModel.Tokens.Jwt' 7.0.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
-      "libraryId": "System.IdentityModel.Tokens.Jwt",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
-      "libraryId": "System.Text.Json",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
-      "libraryId": "System.Text.Json",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }
