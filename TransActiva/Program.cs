@@ -30,15 +30,16 @@ if (app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
-    app.UseSwagger();
-
-    // Swagger UI en la raíz "/"
-    app.UseSwaggerUI(options =>
-    {
-        options.RoutePrefix = string.Empty; // Esto hace que Swagger UI esté en la raíz
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
-    });
+   
 }
+app.UseSwagger();
+
+// Swagger UI en la raíz "/"
+app.UseSwaggerUI(options =>
+{
+    options.RoutePrefix = string.Empty; // Esto hace que Swagger UI esté en la raíz
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
+});
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
